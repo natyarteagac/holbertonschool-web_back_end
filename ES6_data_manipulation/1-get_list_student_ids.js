@@ -1,22 +1,9 @@
-export default function getListStudents() {
-  let listStudents = [];
-  listStudents = [
-    {
-      id: '1',
-      firstName: 'Guillaume',
-      location: 'San Francisco',
-    },
-    {
-      id: '2',
-      firstName: 'James',
-      location: 'Columbia',
-    },
-    {
-      id: '5',
-      firstName: 'Serena',
-      location: 'San Francisco',
-    },
-  ];
-  const listResult = listStudents.map((student) => (student.id));
+export default function getListStudentIds(listStudents) {
+  let listResult = [];
+  if (Array.isArray(listStudents)) {
+    listResult = listStudents.map((student) => (student.id));
+  } else {
+    listResult = [];
+  }
   return listResult;
 }
