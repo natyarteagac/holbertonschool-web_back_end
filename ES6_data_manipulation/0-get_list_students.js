@@ -1,6 +1,5 @@
 export default function getListStudents() {
-  let listStudents = [];
-  listStudents = [
+  const listStudents = [
     {
       id: '1',
       firstName: 'Guillaume',
