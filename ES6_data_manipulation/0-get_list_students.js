@@ -17,12 +17,5 @@ export default function getListStudents() {
       location: 'San Francisco',
     },
   ];
-  const listResult = listStudents.map((student) => (
-    {
-      id: student.id,
-      firstName: student.firstName,
-      location: student.location,
-    }
-  ));
-  return listResult;
+  return listStudents;
 }
